@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron text-center">
+            <h1 class="display-4 mb-4">Magic Notes App</h1>
+            <!-- <p class="lead">Add your important notes here</p> -->
+            <input id="searchTxt" class="form-control mb-3" placeholder="Search Notes" type="text">
+            <button id="searchBtn" class="btn btn-info">Search</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h4 class="card-title mt-3 ml-3">Add Note</h4>
+            <div class="container-fluid">
+                <textarea id="notesTxt" placeholder="Enter text here" class="form-control" id="myText"
+                    rows="5"></textarea>
+                <button id="addBtn" class="my-2 btn btn-primary">
+                    Add Notes
+                </button>
+            </div>
+        </div>
+
+        <div id="notes" class="row my-4">
+            <div class="noteCard col-lg-3 col-md-4 col-sm-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Note 1</h5>
+                        <p class="card-text">
+                        </p>
+                        <button id="deleteBtn" class="btn btn-danger">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Note 1</h5>
+                        <p class="card-text">
+                        </p>
+                        <button id="deleteBtn" class="btn btn-danger">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Note 1</h5>
+                        <p class="card-text">
+                        </p>
+                        <button id="deleteBtn" class="btn btn-danger">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Note 1</h5>
+                        <p class="card-text">
+                        </p>
+                        <button id="deleteBtn" class="btn btn-danger">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
